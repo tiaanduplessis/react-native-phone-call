@@ -19,6 +19,9 @@
     <a href="https://badge.fury.io/gh/tiaanduplessis%2Freact-native-phone-call">
       <img src="https://badge.fury.io/gh/tiaanduplessis%2Freact-native-phone-call.svg?style=flat-square" alt="GitHub version" />
    </a>
+   <a href="https://greenkeeper.io/">
+      <img src="https://badges.greenkeeper.io/tiaanduplessis/react-native-phone-call.svg?style=flat-square" alt="GitHub version" />
+   </a>
   </div>
 </div>
 <br>
@@ -38,8 +41,6 @@
 
 
 ## Introduction
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/react-native-phone-call.svg)](https://greenkeeper.io/)
 
 This is a small module that allows you to initiate a phone call in React Native. 
 
