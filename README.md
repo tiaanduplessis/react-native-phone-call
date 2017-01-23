@@ -39,6 +39,8 @@
 
 ## Introduction
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/react-native-phone-call.svg)](https://greenkeeper.io/)
+
 This is a small module that allows you to initiate a phone call in React Native. 
 
 ## Install
