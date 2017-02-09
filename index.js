@@ -1,7 +1,6 @@
 import { Platform, Linking } from 'react-native'
 
 const isString = (str) => Object.prototype.toString.call(str) === '[object String]'
-
 const isBool = (bool) => Object.prototype.toString.call(bool) === '[object Boolean]'
 
 const launchLink = (url) => {
@@ -24,7 +23,7 @@ const launchLink = (url) => {
   return true
 }
 
-export const call = (args = { prompt: true }) => {
+const call = (args = { prompt: true }) => {
   if (!args.number) { return console.error('Please provide a number to call') }
   if (!isString(args.number) || !isBool(args.prompt)) { return console.error('The provided arguments are not valid types') }
 
@@ -32,3 +31,5 @@ export const call = (args = { prompt: true }) => {
 
   return launchLink(url)
 }
+
+export default call
