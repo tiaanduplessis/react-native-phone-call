@@ -70,7 +70,7 @@ const args = {
   prompt: false // Optional boolean property. Determines if the user should be prompt prior to the call 
 }
 
-call(args)
+call(args).catch(console.error)
 ```
 
 ## Contributing
