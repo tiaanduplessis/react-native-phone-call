@@ -4,7 +4,7 @@
   "description": "Initiate a phone call in React Native",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/tiaanduplessis/react-native-call.git",
+    "url": "https://github.com/tiaanduplessis/react-native-phone-call.git",
     "type": "git"
   },
   "scripts": {
