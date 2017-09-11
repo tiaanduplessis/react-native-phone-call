@@ -19,9 +19,6 @@
     <a href="https://badge.fury.io/gh/tiaanduplessis%2Freact-native-phone-call">
       <img src="https://badge.fury.io/gh/tiaanduplessis%2Freact-native-phone-call.svg?style=flat-square" alt="GitHub version" />
    </a>
-   <a href="https://greenkeeper.io/">
-      <img src="https://badges.greenkeeper.io/tiaanduplessis/react-native-phone-call.svg?style=flat-square" alt="GitHub version" />
-   </a>
   </div>
 </div>
 <br>
