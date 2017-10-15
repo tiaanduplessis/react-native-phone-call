@@ -19,6 +19,9 @@
     <a href="https://badge.fury.io/gh/tiaanduplessis%2Freact-native-phone-call">
       <img src="https://badge.fury.io/gh/tiaanduplessis%2Freact-native-phone-call.svg?style=flat-square" alt="GitHub version" />
    </a>
+  <a href="https://greenkeeper.io/">
+      <img src="https://badges.greenkeeper.io/tiaanduplessis/react-native-phone-call.svg" alt="Greenkeeper" />
+   </a>
   </div>
 </div>
 <br>
@@ -32,14 +35,13 @@
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#install">Install</a></li>
   <li><a href="#usage">Usage</a></li>
+  <li><a href="#limitations">Limitations</a></li>
   <li><a href="#contribute">Contribute</a></li>
   <li><a href="#license">License</a></li>
 </details>
 
 
 ## Introduction
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/react-native-phone-call.svg)](https://greenkeeper.io/)
 
 This is a small module that allows you to initiate a phone call in React Native. 
 
@@ -71,6 +73,10 @@ const args = {
 
 call(args).catch(console.error)
 ```
+
+## Limitations
+
+This module only provides a simple wrapper around the Linking API and is thus limited in the functionality it can provide. If you are looking for additional functionality, such as being able to initiate a phone call without user confirmation, please use other packages like [react-native-immediate-phone-cal](https://github.com/wumke/react-native-immediate-phone-call)
 
 ## Contributing
 
