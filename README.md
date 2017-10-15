@@ -76,7 +76,7 @@ call(args).catch(console.error)
 
 ## Limitations
 
-This module only provides a simple wrapper around the Linking API and is thus limited in the functionality it can provide. If you are looking for additional functionality, such as being able to initiate a phone call without user confirmation, please use other packages like [react-native-immediate-phone-cal](https://github.com/wumke/react-native-immediate-phone-call)
+This module only provides a simple wrapper around the Linking API and is thus limited in the functionality it can provide. If you are looking for additional functionality, such as being able to initiate a phone call without user confirmation, please use other packages like [react-native-immediate-phone-call](https://github.com/wumke/react-native-immediate-phone-call).
 
 ## Contributing
 
