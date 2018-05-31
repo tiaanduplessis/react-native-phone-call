@@ -1,6 +1,6 @@
 {
   "name": "react-native-phone-call",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Initiate a phone call in React Native",
   "main": "index.js",
   "repository": {
@@ -8,16 +8,15 @@
     "type": "git"
   },
   "scripts": {
-    "lint": "standard",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "standard --fix",
     "test": "npm run lint"
   },
   "files": [
     "index.js"
   ],
-  "author": "Tiaan <tiaanduplessis@hotmail.com>",
+  "author": "Tiaan du Plessis",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^11.0.0"
+    "standard": "^11.0.1"
   }
 }
