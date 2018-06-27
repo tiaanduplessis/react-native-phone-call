@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="media/banner.png" alt="react-native-phone">
+  <img width="80%" src="media/banner.png" alt="react-native-phone">
 </div>
 <br>
 <div align="center">
@@ -24,10 +24,6 @@
    </a>
   </div>
 </div>
-<br>
-<div align="center">
-  Built with ❤︎ by <a href="http://tiaanduplessis.co.za">Tiaan du Plessis</a>
-</div>
 
 <h2>Table of Contents</h2>
 <details>
@@ -44,6 +40,10 @@
 ## Introduction
 
 This is a small module that allows you to initiate a phone call in React Native. 
+
+### **NOTE**
+
+When runnning on the iOS simulator, you will get a `the URL is invalid` error. This will work on a actual device. **The iOS simulator does not support phone call feature**.
 
 ## Install
 
