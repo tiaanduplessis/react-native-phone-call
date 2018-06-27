@@ -1,6 +1,6 @@
 {
   "name": "react-native-phone-call",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Initiate a phone call in React Native",
   "main": "index.js",
   "repository": {
