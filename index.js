@@ -22,7 +22,7 @@ const call = (args = {}) => {
 
   if (!settings.number) { return createError('no number provided') }
   if (!isString(settings.number)) { return createError('number should be string') }
-  if (!isBool(settings.prompt)) { return createError('number should be bool') }
+  if (!isBool(settings.prompt)) { return createError('prompt should be bool') }
 
   const url = `${Platform.OS === 'ios' && settings.prompt ? 'telprompt:' : 'tel:'}${settings.number}`
 
