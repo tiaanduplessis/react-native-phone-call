@@ -43,7 +43,7 @@ This is a small module that allows you to initiate a phone call in React Native.
 
 ### **NOTE**
 
-When runnning on the iOS simulator, you will get a `the URL is invalid` error. This will work on a actual device. **The iOS simulator does not support phone call feature**.
+When running on the iOS simulator, you will get a `the URL is invalid` error. This will work on a actual device. **The iOS simulator does not support phone call feature**.
 
 ## Install
 
