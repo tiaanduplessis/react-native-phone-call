@@ -25,6 +25,6 @@
   "author": "Tiaan du Plessis",
   "license": "MIT",
   "devDependencies": {
-    "standard": "12.0.1"
+    "standard": "14.3.1"
   }
 }
