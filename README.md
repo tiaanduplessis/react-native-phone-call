@@ -11,9 +11,10 @@
 
 Initiate a phone call in React Native.
 
+## Table of Contents
+
 - [react-native-phone-call](#react-native-phone-call)
   - [Background](#background)
-    - [Running on Android](#running-on-android)
     - [Running on iOS simulator](#running-on-ios-simulator)
     - [Running on Android SDK 30+](#running-on-android-sdk-30)
     - [Limitations](#limitations)
@@ -27,8 +28,6 @@ Initiate a phone call in React Native.
 ## Background
 
 This is a small wrapper that allows you to initiate a phone call in React Native. 
-
-### Running on Android
 
 ### Running on iOS simulator
 
@@ -49,6 +48,7 @@ Android SDK 30 introduced changes around how apps can query and interact with ot
 ### Limitations
 
 This module only provides a simple wrapper around the Linking API and is thus limited in the functionality it can provide. If you are looking for additional functionality, such as being able to initiate a phone call without user confirmation, please use other packages like [react-native-immediate-phone-call](https://github.com/wumke/react-native-immediate-phone-call).
+
 ## Install
 
 Install the package locally within you project folder with your package manager:
