@@ -11,6 +11,8 @@
   },
   "scripts": {
     "lint": "standard --fix",
+    "lint:check": "standard",
+    "test": "node --experimental-vm-modules --test test/package.test.js",
     "prepublishOnly": "npm run lint"
   },
   "files": [
@@ -28,6 +30,7 @@
   "author": "Tiaan du Plessis",
   "license": "MIT",
   "devDependencies": {
-    "standard": "17.0.0"
+    "standard": "17.0.0",
+    "typescript": "5.6.3"
   }
 }
