@@ -99,8 +99,27 @@ For all configuration options, please see the [API docs](https://paka.dev/npm/re
 
 Got an idea for a new feature? Found a bug? Contributions are welcome! Please [open up an issue](https://github.com/tiaanduplessis/react-native-phone-call/issues) or [make a pull request](https://makeapullrequest.com/).
 
+For development, use Node.js 22 or newer, npm, `tar`, and pnpm 7.33.7 (the
+version used with the committed lockfile):
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm run lint:check
+pnpm test
+```
+
+The tests pack this checkout with `npm pack --ignore-scripts`, inspect the actual
+tarball, and compile a strict TypeScript consumer against its extracted types.
+They also test the packed runtime with a React Native mock; no device or native
+phone calls are needed. The test runner requires Node.js 18 or newer and uses
+Node's experimental VM modules to mock the React Native import. This development
+requirement does not change the package's React Native runtime requirements.
+
+Do not install registry releases of this package to run the tests. Versions
+1.2.1 and 1.2.2 are affected by a [malicious-package advisory](https://advisories.gitlab.com/npm/react-native-phone-call/GMS-2025-592/).
+The test suite only packs the local source and never downloads this package.
+
 ## License
 
 [MIT © Tiaan du Plessis](./LICENSE)
-
 

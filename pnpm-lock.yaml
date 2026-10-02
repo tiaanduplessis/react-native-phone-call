@@ -2,9 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   standard: 17.0.0
+  typescript: 5.6.3
 
 devDependencies:
   standard: 17.0.0
+  typescript: 5.6.3
 
 packages:
 
@@ -1337,6 +1339,12 @@ packages:
   /type-fest/0.3.1:
     resolution: {integrity: sha512-cUGJnCdr4STbePCgqNFbpVNCepa+kAVohJs1sLhxzdH+gnEoOd8VhbYa7pD3zZYGiURWM2xzEII3fQcRizDkYQ==}
     engines: {node: '>=6'}
+    dev: true
+
+  /typescript/5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
     dev: true
 
   /unbox-primitive/1.0.2:
