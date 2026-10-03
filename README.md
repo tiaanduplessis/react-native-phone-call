@@ -72,7 +72,7 @@ import call from 'react-native-phone-call'
 
 const args = {
   number: '9093900003', // String value with the number to call
-  prompt: false, // Optional boolean property. Determines if the user should be prompted prior to the call 
+  prompt: false, // Optional boolean. Uses tel: instead of telprompt: on iOS
   skipCanOpen: true // Skip the canOpenURL check
 }
 
@@ -93,7 +93,26 @@ call(args).catch(console.error)
 ```
 ## API
 
-For all configuration options, please see the [API docs](https://paka.dev/npm/react-native-phone-call).
+### `call(args): Promise<void>`
+
+The default export accepts an options object:
+
+| Option | Type | Default | Description |
+| --- | --- | --- | --- |
+| `number` | `string` | Required | A nonempty string containing the number to call. It is appended to the URL unchanged; the module does not trim, format, or validate phone numbers. |
+| `prompt` | `boolean` | `true` | On iOS, `true` selects `telprompt:` and `false` selects `tel:`. Other platforms always use `tel:`. The operating system controls the confirmation and dialer behavior. |
+| `skipCanOpen` | `boolean` | `false` | Set to `true` to skip only the `Linking.canOpenURL` availability check and call `Linking.openURL` directly. Argument validation still applies, and opening the URL can still fail. |
+
+`call` returns the promise from opening the URL, after the availability check
+unless `skipCanOpen` is enabled. A resolved promise means the URL was opened;
+it does not report whether a phone call connected or completed. Setting `prompt`
+to `false` does not guarantee that the operating system will omit confirmation.
+
+The promise rejects when the number is missing, empty, or not a string, when
+`prompt` or `skipCanOpen` is not a boolean, or when `Linking.canOpenURL` reports
+that the URL cannot be opened. Rejections from `Linking.canOpenURL` and
+`Linking.openURL` are passed through to the caller, so handle errors with
+`.catch(...)` as in the usage examples, or with `try`/`catch` when using `await`.
 
 ## Contributing
 
@@ -122,4 +141,3 @@ The test suite only packs the local source and never downloads this package.
 ## License
 
 [MIT © Tiaan du Plessis](./LICENSE)
-
